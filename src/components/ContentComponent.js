@@ -18,9 +18,9 @@ function Content(props) {
                     </Col>
                 </Row> */}
                 <Row>
-                    
+                    <h3 className="cnft-name">{item.name}</h3> 
                     <div className="card-hover">
-                        <h3 className="cnft-name">{item.name}</h3> 
+                        
                         <div className="cnft-card">
                             <div className="circle">
                                 <div class="cnft-card-content">
