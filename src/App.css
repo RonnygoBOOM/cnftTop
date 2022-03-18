@@ -1,0 +1,59 @@
+.App {
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+.nav {
+  margin: 0em;
+  background-color: rgb(7, 201, 250);
+  width: 100%;
+  color: white;
+}
+
+.nav h1 {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+.logo {
+  width: 3em;
+  height: 3em;
+  margin: 1em;
+  filter:grayscale(100%) contrast(10000%) invert(100%);
+}
+
+.item {
+display: flex;
+justify-content: center;
+text-align:center;
+margin:.25em;
+}
+.item img{
+  border-radius: .75em;
+  width: 33vw;
+  margin: .5em;
+}
+
+.description {
+  text-align: left;
+  align-self: center;
+  background-color: rgb(7, 201, 250);
+  border-color: black;
+  border-width: 10px;
+  border-radius: 3em;
+  padding: 2em 0em 2em 2em;
+  margin-left: 1em;
+  margin-right: 3em;
+  color: rgb(255, 255, 255);
+
+}
+
+.description p {
+  padding-left: 1em;
+}
+
+.floor {
+  font-weight: bold;
+  text-align: center;
+  padding: 0em 0em 0em 0em !important;
+}
