@@ -2,7 +2,9 @@ export const CNFT = [
     {
         id: 0,
         name: "Cardano Crocs Club",
-        image: "images/CardanoCrocsClub.png",
+        title: "Meet the Crocs",
+        image: "images/Croc1.png",
+        image2: "images/CardanoCrocsClub.png",
         description: "Project backed by CCC",
         floorPrice: 270,
         rating: 5,
@@ -10,6 +12,7 @@ export const CNFT = [
     {
         id: 1,
         name: "CryptoDino",
+        title: "Meet the Dinos",
         image: "images/CryptoDino.webp",
         description: "Prehistoric Cuties",
         floorPrice: 90,
@@ -18,6 +21,7 @@ export const CNFT = [
     {
         id: 2,
         name: "Grandmaster Adventurers",
+        title: "Meet the Heroes",
         image: "images/GrandmasterAdventurer.gif",
         description: "Fantasy World Adventurers for a MMORPG Inn-management and questing game",
         floorPrice: 95,
@@ -26,6 +30,7 @@ export const CNFT = [
     {
         id: 3,
         name: "Pavia",
+        title: "Discover the Metaverse",
         image: "images/Pavia.webp",
         description: "The first metaverse land grab in the Cardano Ecosystem",
         floorPrice: 350,

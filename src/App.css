@@ -53,7 +53,113 @@ margin:.25em;
 }
 
 .floor {
+  position: absolute;
   font-weight: bold;
   text-align: center;
-  padding: 0em 0em 0em 0em !important;
+  margin-top: 24em !important;
+}
+
+.cnft-name {
+  position:absolute;
+  text-align: center;
+  align-self: top;
+  margin-top: -12.5em;
+  color: rgb(0, 208, 245);
+  box-shadow: 10px;
+  transition: 0.5s;
+}
+
+
+.card-hover
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.cnft-card 
+{
+  position: relative;
+  width: 700px;
+  height: 250px;
+  border-radius: 20px !important;
+  background: rgb(255, 255, 255) !important;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  
+}
+
+.cnft-card .circle
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.cnft-card .circle:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(2, 43, 82);
+  clip-path: circle(120px at center);
+  transition: 0.5s;
+}
+
+.cnft-card .circle:hover:before
+{
+  background: rgb(7, 201, 250);
+  clip-path: circle(400px at center);
+  border-radius: 140px;
+}
+
+.cnft-card img
+{
+  max-height: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.cnft-card:hover img
+{
+  Left: 72%;
+  height: 300px;
+  transition: .75s;
+}
+
+.cnft-card .cnft-card-content
+{
+  position: relative;
+  width: 50%;
+  padding: 3em 1em 1em 3em;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  color: rgb(255, 255, 255);
+  font-family: "Varela round";
+}
+
+.cnft-card:hover .cnft-card-content
+{
+  Left: 0;
+  opacity: 1;
+  visibility: visible;
 }
