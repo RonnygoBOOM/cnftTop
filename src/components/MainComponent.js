@@ -4,10 +4,17 @@ import Content from './ContentComponent';
 import { CNFT } from '../shared/cnfts';
 
 function Main() {
+
+    const [darkMode, setDarkMode] = React.useState(false)
+
+    function toggleDarkMode() {
+        setDarkMode(prev => !prev)
+    }
+
     return (
         <>
-            <Header />
-            <Content cnft={CNFT}/>
+            <Header darkMode={darkMode} handleClickDarkMode={toggleDarkMode} />
+            <Content className={darkMode ? "main--dark" : ""} darkMode={darkMode} cnft={CNFT}/>
         </>
     );
 }

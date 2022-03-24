@@ -17,13 +17,13 @@ function Content(props) {
                         <p className="floor">Floor Price: {item.floorPrice}₳</p>
                     </Col>
                 </Row> */}
-                <Row>
+                <Row key={item.id} className="row--dark">
                     <h3 className="cnft-name">{item.name}</h3> 
-                    <div className="card-hover">
+                    <div className={props.darkMode ? "card-hover-dark card-hover" : "card-hover"}>
                         
-                        <div className="cnft-card">
+                        <div className={props.darkMode ? "cnft-card cnft-card-dark" : "cnft-card"}>
                             <div className="circle">
-                                <div class="cnft-card-content">
+                                <div className={props.darkMode ? "cnft-card-content cnft-card-content-dark" : "cnft-card-content"}>
                                     <h2>{item.title}</h2>
                                     <p>{item.description}</p>
                                     <p>Rating: {item.rating}</p>
@@ -35,7 +35,7 @@ function Content(props) {
                         </div>
                           
                     </div>
-                    <p className="floor">Floor Price: {item.floorPrice}₳</p>
+                    <p className={props.darkMode ? "floor floor--dark" : "floor"}>Floor Price: {item.floorPrice}₳</p>
                 </Row>
             </>
         );
