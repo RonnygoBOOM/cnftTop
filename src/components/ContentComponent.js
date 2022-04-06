@@ -1,22 +1,11 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 
 function Content(props) {
 
     const myCard = props.cnft.map(item => {
         return (
             <>
-                {/* <Row key={item.id} className="item">
-                    <Col>
-                        <img src={item.image}></img>
-                        <p>{item.name}</p>
-                    </Col>
-                    <Col className="description">
-                        <p>{item.description}</p>
-                        <p>Rating: {item.rating}</p>
-                        <p className="floor">Floor Price: {item.floorPrice}₳</p>
-                    </Col>
-                </Row> */}
                 <Row key={item.id} className="row--dark">
                     <h3 className="cnft-name">{item.name}</h3> 
                     <div className={props.darkMode ? "card-hover-dark card-hover" : "card-hover"}>

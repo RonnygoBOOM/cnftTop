@@ -76,18 +76,6 @@
   color: #2B283A;
 }
 
-/* .nav.dark .toggler--light {
-  color: #918E9B;
-}
-
-.toggler--dark {
-  color: #D5D4D8;
-}
-
-.nav.dark .toggler-dark {
-  color: #FFFFFF;
-} */
-
 .nav.dark .toggler--slider {
   justify-content: flex-end;
 }
@@ -123,7 +111,7 @@ margin:.25em;
   padding: 2em 0em 2em 2em;
   margin-left: 1em;
   margin-right: 3em;
-  color: rgb(255, 255, 255);
+  color: rgb(253, 253, 253);
 
 }
 
@@ -253,3 +241,109 @@ margin:.25em;
   opacity: 1;
   visibility: visible;
 }
+
+@media (max-width: 600px)
+{
+  .floor {
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -4em !important;
+  }
+  
+  .floor--dark {
+    color: white;
+  }
+  
+  .card-hover
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 28em;
+    background: white;
+  }
+  
+  .card-hover-dark {
+    background: #2B283A;
+  }
+  
+  .cnft-card .cnft-card-content
+  {
+    position: relative;
+    width: 70%;
+    padding: 3em 1em 1em 3em;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    color: rgb(255, 255, 255);
+    font-family: "Varela round";
+  }
+  
+  .cnft-card:hover .cnft-card-content
+  {
+    Left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
+  .cnft-card 
+  {
+    position: relative;
+    width: 450px;
+    height: 250px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    
+  }
+  
+  .cnft-card-dark {
+    background-color:#2B283A !important;
+  }
+  
+  .cnft-card .circle:before
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(2, 43, 82);
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+  }
+  
+  .cnft-card .circle:hover:before
+  {
+    background: rgb(7, 201, 250);
+    clip-path: circle(400px at center);
+    border-radius: 140px;
+  }
+  
+  .cnft-card:hover img
+  {
+    Top: -10%;
+    Left: 52%;
+    transform: scale(50%);
+    height: 300px;
+    transition: .75s;
+  }
+  
+}
+
+/* @media (min-width: 1008px) 
+{
+  .row--dark {
+    display: flex;
+    flex: 3 0px;
+  }
+} */
