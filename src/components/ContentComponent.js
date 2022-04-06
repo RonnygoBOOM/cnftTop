@@ -30,6 +30,31 @@ function Content(props) {
         );
     })
 
+    // function twoColumns() { 
+    //     for(let i = 0; i < myCard.length; i++) {
+    //         return (
+    // <>
+    //     <Row>
+    //         <Col>
+    //             {myCard[i++]}
+    //         </Col>
+    //         <Col>
+    //             {myCard[i++]}
+    //         </Col>
+    //     </Row>
+    //     <Row>
+    //         <Col>
+    //             {myCard[i++]}
+    //         </Col>
+    //         <Col>
+    //             {myCard[i++]}
+    //         </Col>
+    //     </Row>
+    // </>
+    // )
+    // }
+
+
     return (
         <>
             {myCard}
