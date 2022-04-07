@@ -30,29 +30,37 @@ function Content(props) {
         );
     })
 
-    // function twoColumns() { 
-    //     for(let i = 0; i < myCard.length; i++) {
-    //         return (
-    // <>
-    //     <Row>
-    //         <Col>
-    //             {myCard[i++]}
-    //         </Col>
-    //         <Col>
-    //             {myCard[i++]}
-    //         </Col>
-    //     </Row>
-    //     <Row>
-    //         <Col>
-    //             {myCard[i++]}
-    //         </Col>
-    //         <Col>
-    //             {myCard[i++]}
-    //         </Col>
-    //     </Row>
-    // </>
-    // )
-    // }
+//     function twoColumns() { 
+//         return (
+// <>
+//     <Row>
+//         <Col "sm-12, lg-6">
+//             {myCard[renderNumber]}
+//             {incrementNumber}
+//         </Col>
+//         <Col>
+//         {myCard[renderNumber]}
+//             {incrementNumber}
+//         </Col>
+//     </Row>
+    
+// </>
+// )
+// }
+
+// renderNumber  React.useState(0)
+// function incrementNumber() {
+//   setRenderNumber(prev => prev+1)
+// }
+// {myCard[renderNumber]}
+
+// return (
+//     <>
+//         {myCard}
+//         <button onClick={twoColumns}>Load More</button>
+//     </>
+// );
+// }
 
 
     return (
