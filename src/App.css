@@ -340,10 +340,10 @@ margin:.25em;
   
 }
 
-/* @media (min-width: 1008px) 
+@media (min-width: 1008px) 
 {
   .row--dark {
     display: flex;
     flex: 3 0px;
   }
-} */
+}
