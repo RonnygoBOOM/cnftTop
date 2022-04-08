@@ -18,7 +18,7 @@ export const CNFT = [
         image: "images/CryptoDino.webp",
         alt: "Crypto Dino Image",
         description: "Prehistoric Cuties",
-        floorPrice: 90,
+        floorPrice: 93,
         rating: 5,
     },
     {
@@ -28,7 +28,7 @@ export const CNFT = [
         image: "images/GrandmasterAdventurer.gif",
         alt: "Grandmaster Adventurer Image",
         description: "Fantasy World Adventurers for a MMORPG Inn-management and questing game",
-        floorPrice: 95,
+        floorPrice: 64,
         rating: 5,
     },
     {
@@ -38,7 +38,18 @@ export const CNFT = [
         image: "images/Pavia.webp",
         alt: "Pavia Image",
         description: "The first metaverse land grab in the Cardano Ecosystem",
-        floorPrice: 350,
+        floorPrice: 329,
         rating: 5,
     },
+    {
+        id: 4,
+        name: "World of Cardano",
+        title: "Mystical Metaverse",
+        image: "images/worldOfCardanoForrest.png",
+        alt: "World of Cardano Image",
+        description: "A neo-medieval Metaverse project that offers the opportunity to exclusively acquire pieces of land in form of unique Cardano NFT (CNFT), based on specific coordinates. ",
+        floorPrice: 60,
+        rating: 5,
+    },
+    
 ]
