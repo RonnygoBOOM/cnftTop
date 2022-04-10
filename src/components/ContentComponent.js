@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Col, Container, UncontrolledTooltip } from 'reactstrap';
 
 function Content(props) {
 
@@ -30,13 +30,16 @@ function Content(props) {
 function twoColumns() {
     return(
     <>
-        <Col sm="12" lg="6">
+        <Col sm="12" /*lg="6"*/>
             {myCard.slice(0, renderNumber)}
+        </Col>
+        <Col sm="12" /*lg="6"*/>
+            {myCard.slice(renderNumber, (renderNumber+1))}
         </Col>
     </>
     )
 }
-const [renderNumber, setRenderNumber] = React.useState(2)
+const [renderNumber, setRenderNumber] = React.useState(1)
 
 function incrementNumber() {
     setRenderNumber(prev => prev+2)
@@ -46,7 +49,14 @@ function incrementNumber() {
     return (
         <>
             {twoColumns()}
-            <button onClick={incrementNumber}>Load More</button>
+            <div className="load-more-button">
+            <button id="uncontrolled-tooltip-load-more" className="load-more" onClick={incrementNumber}>
+                <span className="fa fa-chevron-down"></span>
+            </button>
+      <UncontrolledTooltip placement="top" target="uncontrolled-tooltip-load-more">
+        Load More
+      </UncontrolledTooltip>
+            </div>
         </>
     );
 }

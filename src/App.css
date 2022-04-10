@@ -352,6 +352,24 @@ margin:.25em;
   }
 }
 
+.load-more-button {
+  display: flex;
+  justify-content: center;
+}
+
+.load-more {
+  width: 40px;
+  background: white;
+  border: solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+}
+
 /* Chart */
 .popularity-bar-rounded {
   width: 50px;
