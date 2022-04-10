@@ -18,7 +18,7 @@ export const CNFT = [
         image: "images/CryptoDino.webp",
         alt: "Crypto Dino Image",
         description: "Prehistoric Cuties",
-        floorPrice: 93,
+        floorPrice: 108,
         rating: 4,
     },
     {
@@ -38,7 +38,7 @@ export const CNFT = [
         image: "images/Pavia.webp",
         alt: "Pavia Image",
         description: "The first metaverse land grab in the Cardano Ecosystem",
-        floorPrice: 329,
+        floorPrice: 345,
         rating: 5,
     },
     {
@@ -48,7 +48,7 @@ export const CNFT = [
         image: "images/worldOfCardanoForrest.png",
         alt: "World of Cardano Image",
         description: "A neo-medieval Metaverse project that offers the opportunity to exclusively acquire pieces of land in form of unique Cardano NFT (CNFT), based on specific coordinates. ",
-        floorPrice: 60,
+        floorPrice: 59,
         rating: 4,
     },
     {
@@ -68,7 +68,7 @@ export const CNFT = [
         image: "images/clayNation.png",
         alt: "Clay Mates Image",
         description: "With many collections to choose from, and a history of big-name celebrity backers, Clay Nation is one of the biggest names in the CNFT space.",
-        floorPrice: 2699,
+        floorPrice: 2499,
         rating: 5,
     },
     {
@@ -78,7 +78,7 @@ export const CNFT = [
         image: "images/bossCat.png",
         alt: "Boss Cat Rocket Club Image",
         description: "These space-bound cats are founded by one of the most intrepid teams of artists, game devs, and community managers.",
-        floorPrice: 1799,
+        floorPrice: 1669,
         rating: 5,
     },
     {
@@ -88,7 +88,7 @@ export const CNFT = [
         image: "images/spaceBudz.png",
         alt: "Spacebudz Image",
         description: "These suited-up space animals are some of the first on the chain, and the current biggest blue-chip NFT in the space.",
-        floorPrice: 6400,
+        floorPrice: 5999,
         rating: 5,
     },
     

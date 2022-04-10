@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react';
 import Header from './HeaderComponent';
 import Content from './ContentComponent';
+import Featured from './FeaturedComponent';
 import { CNFT } from '../shared/cnfts';
 
 function Main() {
 
     const [darkMode, setDarkMode] = React.useState(false)
-
 
     function toggleDarkMode() {
         setDarkMode(prev => !prev)
@@ -20,6 +20,7 @@ function Main() {
     return (
         <>
             <Header darkMode={darkMode} handleClickDarkMode={toggleDarkMode} />
+            <Featured className={darkMode ? "main--dark" : ""} darkMode={darkMode}/>
             <Content className={darkMode ? "main--dark" : ""} darkMode={darkMode} cnft={CNFT}/>
             <div className="chart-border">Border</div>
                 <div className="popularity-chart"><p>Popularity</p></div>
