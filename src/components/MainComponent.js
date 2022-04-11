@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import Header from './HeaderComponent';
+import SubHeader from './SubHeaderComponent';
 import Content from './ContentComponent';
 import Featured from './FeaturedComponent';
 import { CNFT } from '../shared/cnfts';
@@ -20,9 +21,11 @@ function Main() {
     return (
         <>
             <Header darkMode={darkMode} handleClickDarkMode={toggleDarkMode} />
-            <Featured className={darkMode ? "main--dark" : ""} darkMode={darkMode}/>
+            <SubHeader darkMode={darkMode}/>
+            <Featured className={darkMode ? "main--dark" : ""} darkMode={darkMode} cnft={CNFT}/>
             <Content className={darkMode ? "main--dark" : ""} darkMode={darkMode} cnft={CNFT}/>
-            <div className="chart-border">Border</div>
+            <div className={darkMode ? "background--dark" : "background--light"}>
+                <div className="chart-border">Border</div>
                 <div className="popularity-chart"><p>Popularity</p></div>
                 <div className="popularity-bar-rounded"></div>
                 <div className="popularity-bar-shine"></div>
@@ -32,6 +35,7 @@ function Main() {
                 <div className="utility-chart"><p>Utility</p></div>
                 <div className="utility-bar-rounded"></div>
                 <div className="utility-bar-shine"></div>
+            </div>
         </>
     );
 }

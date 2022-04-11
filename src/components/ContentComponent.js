@@ -49,13 +49,15 @@ function incrementNumber() {
     return (
         <>
             {twoColumns()}
-            <div className="load-more-button">
-            <button id="uncontrolled-tooltip-load-more" className="load-more" onClick={incrementNumber}>
-                <span className="fa fa-chevron-down"></span>
-            </button>
-      <UncontrolledTooltip placement="top" target="uncontrolled-tooltip-load-more">
-        Load More
-      </UncontrolledTooltip>
+            <div className={props.darkMode ? "background--dark" : "background--light"}>
+                <div className="load-more-button">
+                    <button id="uncontrolled-tooltip-load-more" className="load-more" onClick={incrementNumber}>
+                        <span className="fa fa-chevron-down"></span>
+                    </button>
+                    <UncontrolledTooltip placement="top" target="uncontrolled-tooltip-load-more">
+                        Load More
+                    </UncontrolledTooltip>
+                </div>
             </div>
         </>
     );

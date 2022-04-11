@@ -10,6 +10,7 @@ export const CNFT = [
         popularity: 70,
         floorPrice: 270,
         rating: 5,
+        featured: "",
     },
     {
         id: 1,
@@ -20,6 +21,7 @@ export const CNFT = [
         description: "Prehistoric Cuties",
         floorPrice: 108,
         rating: 4,
+        featured: "",
     },
     {
         id: 2,
@@ -30,6 +32,7 @@ export const CNFT = [
         description: "Fantasy World Adventurers for a MMORPG Inn-management and questing game",
         floorPrice: 64,
         rating: 5,
+        featured: "mid range",
     },
     {
         id: 3,
@@ -40,6 +43,7 @@ export const CNFT = [
         description: "The first metaverse land grab in the Cardano Ecosystem",
         floorPrice: 345,
         rating: 5,
+        featured: "",
     },
     {
         id: 4,
@@ -50,6 +54,7 @@ export const CNFT = [
         description: "A neo-medieval Metaverse project that offers the opportunity to exclusively acquire pieces of land in form of unique Cardano NFT (CNFT), based on specific coordinates. ",
         floorPrice: 59,
         rating: 4,
+        featured: "",
     },
     {
         id: 5,
@@ -60,6 +65,7 @@ export const CNFT = [
         description: "Cardano Crocs Club's second mint is fully metaverse-ready, and offers staking rewards that payout in C4 token",
         floorPrice: 71,
         rating: 5,
+        featured: "upcoming",
     },
     {
         id: 6,
@@ -70,6 +76,7 @@ export const CNFT = [
         description: "With many collections to choose from, and a history of big-name celebrity backers, Clay Nation is one of the biggest names in the CNFT space.",
         floorPrice: 2499,
         rating: 5,
+        featured: "blue chip",
     },
     {
         id: 7,
@@ -80,6 +87,7 @@ export const CNFT = [
         description: "These space-bound cats are founded by one of the most intrepid teams of artists, game devs, and community managers.",
         floorPrice: 1669,
         rating: 5,
+        featured: "",
     },
     {
         id: 8,
@@ -90,6 +98,7 @@ export const CNFT = [
         description: "These suited-up space animals are some of the first on the chain, and the current biggest blue-chip NFT in the space.",
         floorPrice: 5999,
         rating: 5,
+        featured: "",
     },
     
 ]
