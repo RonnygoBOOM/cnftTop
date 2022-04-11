@@ -4,6 +4,9 @@ import SubHeader from './SubHeaderComponent';
 import Content from './ContentComponent';
 import Featured from './FeaturedComponent';
 import { CNFT } from '../shared/cnfts';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from '../Pages/Home';
+import About from '../Pages/About';
 
 function Main() {
 
@@ -20,10 +23,13 @@ function Main() {
 
     return (
         <>
-            <Header darkMode={darkMode} handleClickDarkMode={toggleDarkMode} />
-            <SubHeader darkMode={darkMode}/>
-            <Featured className={darkMode ? "main--dark" : ""} darkMode={darkMode} cnft={CNFT}/>
-            <Content className={darkMode ? "main--dark" : ""} darkMode={darkMode} cnft={CNFT}/>
+        <BrowserRouter>
+                <Header darkMode={darkMode} handleClickDarkMode={toggleDarkMode} />
+                <Routes>
+                    <Route path="/" element={<Home darkMode={darkMode}/>} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
+        </BrowserRouter>
             <div className={darkMode ? "background--dark" : "background--light"}>
                 <div className="chart-border">Border</div>
                 <div className="popularity-chart"><p>Popularity</p></div>

@@ -4,10 +4,9 @@
 3. implement user voting for multiple categories
 4. voting data should help inform automatic graphs to show things like popularity, celebrity backing, meeting roadmap milestone goals, discord activity, utility, price action/history
 5. find an API that will help bring in other useful data. 
-6. Implement React Router DOM
-7. Implement Search Bar and render only matching searches 
-8. Hover effect for Featured (and study CSS animations)
-
+6. Implement Search Bar and render only matching searches 
+7. Hover effect for Featured (and study CSS animations)
+8. Parallax "Don't Trust, Verify." so it disappears upward behind the nav
 
 COMPLETED:
 
@@ -18,3 +17,4 @@ COMPLETED:
 
 2. This Week's Featured: a. Blue Chip b. Growing Mid-tier c. upcoming project
 3.Don't Trust, Verify.
+4. Implement React Router DOM
