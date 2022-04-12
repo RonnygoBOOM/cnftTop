@@ -19,6 +19,10 @@ body .darkMode-on{
   color: white;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 0 16px 0 16px;
+  z-index: 1;
 }
 
 
@@ -109,11 +113,12 @@ margin: 0;
 /* Featured styles */
 .featured--dark-outer {
 background: #2B283A;
-padding: 1em 0 1em 0;
+padding: 0 0 .3em 0;
 }
 
 .featured-outer {
 background: white;
+padding: 0 0 .1em 0;
 }
 
 .featured {
@@ -124,7 +129,7 @@ background: white;
 
 .featured--dark {
   background: #2B283A;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
   display: flex; 
   box-shadow: 5px 0px 5px 5px rgb(0,0,0,.3);
 }
@@ -490,7 +495,6 @@ margin:.25em;
 .background--dark {
   background-color: #2B283A;
   padding: 1em;
-  z-index: .1;
 }
 
 /* Chart */
