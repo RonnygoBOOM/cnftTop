@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import {Parallax} from '@react-spring/parallax';
-import { CNFT } from '../shared/cnfts';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../Pages/Home';
 import About from '../Pages/About';
@@ -31,7 +29,6 @@ function Main() {
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
         </BrowserRouter>
-        <Footer />
             {/* <div className={darkMode ? "background--dark" : "background--light"}>
                 <div className="chart-border">Border</div>
                 <div className="popularity-chart"><p>Popularity</p></div>

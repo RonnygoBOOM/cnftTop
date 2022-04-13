@@ -9,7 +9,7 @@ function Footer() {
         <Stack>
           <div className="footer-lists">
             <Row className="justify-content-center">
-              <Col offset="2">
+              <Col>
                 <ul className="footer-list">
                   Socials
                   <li>
