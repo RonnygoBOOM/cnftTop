@@ -1,13 +1,13 @@
 .App {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow: hidden;
 }
 
-body .darkMode-on{
-  background-color: #2B283A !important;
+body .darkMode-on {
+  background-color: #2b283a !important;
 }
 
-/* NAV styles */
+/* NAV and Header styles */
 .container {
   flex-direction: column;
 }
@@ -25,8 +25,6 @@ body .darkMode-on{
   z-index: 1;
 }
 
-
-
 .nav h1 {
   display: flex;
   align-self: center;
@@ -36,7 +34,7 @@ body .darkMode-on{
   width: 3em;
   height: 3em;
   margin: 1em;
-  filter:grayscale(100%) contrast(10000%) invert(100%);
+  filter: grayscale(100%) contrast(10000%) invert(100%);
 }
 
 .toggler {
@@ -53,7 +51,7 @@ body .darkMode-on{
 .toggler--slider {
   width: 25px;
   height: 13px;
-  background-color: #2B283A;
+  background-color: #2b283a;
   border-radius: 2rem;
   margin-inline: 7px;
   cursor: pointer;
@@ -66,7 +64,7 @@ body .darkMode-on{
 
 .nav.dark .toggler--slider {
   border-color: white;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .toggler--slider--circle {
@@ -81,82 +79,118 @@ body .darkMode-on{
 }
 
 .toggler--light {
-  color: #2B283A;
+  color: #2b283a;
 }
 
 .nav.dark .toggler--slider {
   justify-content: flex-end;
 }
 
+/* Footer Styles */
+.container {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.footer {
+  margin: 0em;
+  background-color: rgb(7, 201, 250);
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0;
+  z-index: 1;
+  bottom: 0;
+  align-items: center;
+}
+
+.footer .footer-list {
+  list-style-type: none;
+}
+ 
+.footer-disclaimer {
+  font-size: .8em;
+  text: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer .footer-lists {
+text-align: center;
+}
 /* SubHeader */
 
 .sub-header {
-display: flex;
-justify-content: center;
-font-size: 5em;
-padding: 3em 0 3em 0;
-text-align: center;
-margin: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 4em;
+  padding: 4em 0 4em 0;
+  text-align: center;
+  margin: 0;
 }
 
 .sub-header-dark {
   display: flex;
   justify-content: center;
-  font-size: 5em;
-  padding: 3em 0 3em 0;
+  font-size: 4em;
+  padding: 4em 0 4em 0;
   text-align: center;
-  background-color:#2B283A;
+  background-color: #2b283a;
   color: white;
   margin: 0;
-  }
+}
 
 /* Featured styles */
 .featured--dark-outer {
-background: #2B283A;
-padding: 0 0 .3em 0;
+  background: #2b283a;
+  padding: 0 0 0.3em 0;
 }
 
 .featured-outer {
-background: white;
-padding: 0 0 .1em 0;
+  background: white;
+  padding: 0 0 0.1em 0;
 }
 
 .featured {
-  display: flex; 
+  display: flex;
   margin-bottom: 1em;
-  box-shadow:  5px 0px 5px 5px rgb(0,0,0,.3);
+  box-shadow: 5px 0px 5px 5px rgb(0, 0, 0, 0.3);
 }
 
 .featured--dark {
-  background: #2B283A;
-  margin-bottom: .5em;
-  display: flex; 
-  box-shadow: 5px 0px 5px 5px rgb(0,0,0,.3);
+  background: #2b283a;
+  margin-bottom: 0.5em;
+  display: flex;
+  box-shadow: 5px 0px 5px 5px rgb(0, 0, 0, 0.3);
 }
 
 .featured-text {
-  position:relative;
+  position: relative;
   margin: 1em 0 1em 1em !important;
   color: rgb(0, 208, 245);
   box-shadow: 10px;
 }
 
 .featured-projects {
-display: flex;
-position: relative;
-margin: 1em;
-padding: .5em;
-justify-content:space-around;
+  display: flex;
+  position: relative;
+  margin: 1em;
+  padding: 0.5em;
+  justify-content: space-around;
 }
 
 .featured-projects-dark {
   display: flex;
   position: relative;
   margin: 1em;
-  padding: .5em;
+  padding: 0.5em;
   color: white;
   justify-content: space-around;
-  }
+}
 .featured-project {
   display: flex;
   position: relative;
@@ -204,22 +238,22 @@ width: 5em;
 /* CONTENT styles */
 
 .row--dark {
-  background: #2B283A;
+  background: #2b283a;
 }
 .main--dark {
-  background-color:#2B283A;
+  background-color: #2b283a;
 }
 .item {
-display: flex;
-justify-content: center;
-text-align:center;
-margin:.25em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0.25em;
 }
 
-.item img{
-  border-radius: .75em;
+.item img {
+  border-radius: 0.75em;
   width: 33vw;
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .description {
@@ -233,7 +267,6 @@ margin:.25em;
   margin-left: 1em;
   margin-right: 3em;
   color: rgb(253, 253, 253);
-
 }
 
 .description p {
@@ -252,16 +285,14 @@ margin:.25em;
 }
 
 .cnft-name {
-  position:absolute;
+  position: absolute;
   text-align: center;
   margin-top: 1em !important;
   color: rgb(0, 208, 245);
   box-shadow: 10px;
 }
 
-
-.card-hover
-{
+.card-hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -273,13 +304,10 @@ margin:.25em;
 }
 
 .card-hover-dark {
-  background: #2B283A;
+  background: #2b283a;
 }
 
-
-
-.cnft-card 
-{
+.cnft-card {
   position: relative;
   width: 700px;
   height: 250px;
@@ -289,15 +317,13 @@ margin:.25em;
   align-items: center;
   transition: 0.5s;
   color: rgb(255, 255, 255);
-  
 }
 
 .cnft-card-dark {
-  background-color:#2B283A;
+  background-color: #2b283a;
 }
 
-.cnft-card .circle
-{
+.cnft-card .circle {
   position: absolute;
   top: 0;
   left: 0;
@@ -305,9 +331,8 @@ margin:.25em;
   height: 100%;
 }
 
-.cnft-card .circle:before
-{
-  content: '';
+.cnft-card .circle:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -318,15 +343,13 @@ margin:.25em;
   transition: 0.5s;
 }
 
-.cnft-card .circle:hover:before
-{
+.cnft-card .circle:hover:before {
   background: rgb(7, 201, 250);
   clip-path: circle(400px at center);
   border-radius: 140px;
 }
 
-.cnft-card img
-{
+.cnft-card img {
   max-height: 300px;
   position: absolute;
   top: 50%;
@@ -337,14 +360,12 @@ margin:.25em;
   transition: 0.5s;
 }
 
-.cnft-card:hover img
-{
-  Left: 72%;
-  transition: .75s;
+.cnft-card:hover img {
+  left: 72%;
+  transition: 0.75s;
 }
 
-.cnft-card .cnft-card-content
-{
+.cnft-card .cnft-card-content {
   position: relative;
   width: 50%;
   padding: 3em 1em 1em 3em;
@@ -355,28 +376,25 @@ margin:.25em;
   font-family: "Varela round";
 }
 
-.cnft-card:hover .cnft-card-content
-{
-  Left: 0;
+.cnft-card:hover .cnft-card-content {
+  left: 0;
   opacity: 1;
   visibility: visible;
 }
 
-@media (max-width: 600px)
-{
+@media (max-width: 600px) {
   .floor {
     position: relative;
     font-weight: bold;
     text-align: center;
     margin-top: -4em !important;
   }
-  
+
   .floor--dark {
     color: white;
   }
-  
-  .card-hover
-  {
+
+  .card-hover {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -386,13 +404,12 @@ margin:.25em;
     min-height: 28em;
     background: white;
   }
-  
+
   .card-hover-dark {
-    background: #2B283A;
+    background: #2b283a;
   }
-  
-  .cnft-card .cnft-card-content
-  {
+
+  .cnft-card .cnft-card-content {
     position: relative;
     width: 70%;
     padding: 3em 1em 1em 3em;
@@ -402,17 +419,14 @@ margin:.25em;
     color: rgb(255, 255, 255);
     font-family: "Varela round";
   }
-  
-  .cnft-card:hover .cnft-card-content
-  {
-    Left: 0;
+
+  .cnft-card:hover .cnft-card-content {
+    left: 0;
     opacity: 1;
     visibility: visible;
   }
-  
-  
-  .cnft-card 
-  {
+
+  .cnft-card {
     position: relative;
     width: 450px;
     height: 250px;
@@ -422,16 +436,14 @@ margin:.25em;
     align-items: center;
     transition: 0.5s;
     color: rgb(255, 255, 255);
-    
   }
-  
+
   .cnft-card-dark {
-    background-color:#2B283A;
+    background-color: #2b283a;
   }
-  
-  .cnft-card .circle:before
-  {
-    content: '';
+
+  .cnft-card .circle:before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -441,27 +453,23 @@ margin:.25em;
     clip-path: circle(120px at center);
     transition: 0.5s;
   }
-  
-  .cnft-card .circle:hover:before
-  {
+
+  .cnft-card .circle:hover:before {
     background: rgb(7, 201, 250);
     clip-path: circle(400px at center);
     border-radius: 140px;
   }
-  
-  .cnft-card:hover img
-  {
-    Top: -10%;
-    Left: 52%;
+
+  .cnft-card:hover img {
+    top: -10%;
+    left: 52%;
     transform: scale(50%);
     height: 300px;
-    transition: .75s;
+    transition: 0.75s;
   }
-  
 }
 
-@media (min-width: 1008px) 
-{
+@media (min-width: 1008px) {
   .row--dark {
     display: flex;
     flex: 3 0px;
@@ -488,12 +496,12 @@ margin:.25em;
 }
 
 .background--light {
- background: white;
- padding: 1em;
+  background: white;
+  padding: 1em;
 }
 
 .background--dark {
-  background-color: #2B283A;
+  background-color: #2b283a;
   padding: 1em;
 }
 
@@ -507,7 +515,7 @@ margin:.25em;
 }
 
 .popularity-chart {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   display: flex;
   position: absolute;
@@ -519,9 +527,9 @@ margin:.25em;
 }
 
 .popularity-chart p {
-margin-top: 20px;
-color: white;
-text-shadow: 1.5px 2px black;
+  margin-top: 20px;
+  color: white;
+  text-shadow: 1.5px 2px black;
 }
 
 .popularity-bar-shine {
@@ -532,7 +540,7 @@ text-shadow: 1.5px 2px black;
   border-top-right-radius: 30%;
   border-bottom-right-radius: 30%;
   background: rgb(255, 255, 255);
-  margin-top:-40px;
+  margin-top: -40px;
 }
 
 .activity-bar-rounded {
@@ -544,7 +552,7 @@ text-shadow: 1.5px 2px black;
 }
 
 .activity-chart {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   display: flex;
   position: absolute;
@@ -563,14 +571,14 @@ text-shadow: 1.5px 2px black;
   border-top-right-radius: 30%;
   border-bottom-right-radius: 30%;
   background: rgb(255, 255, 255);
-  margin-top:-40px;
+  margin-top: -40px;
 }
 
 .activity-chart p {
   margin-top: 20px;
   color: white;
   text-shadow: 1.5px 2px black;
-  }
+}
 
 .utility-bar-rounded {
   width: 50px;
@@ -581,7 +589,7 @@ text-shadow: 1.5px 2px black;
 }
 
 .utility-chart {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   display: flex;
   position: absolute;
@@ -600,14 +608,14 @@ text-shadow: 1.5px 2px black;
   border-top-right-radius: 30%;
   border-bottom-right-radius: 30%;
   background: rgb(255, 255, 255);
-  margin-top:-40px;
+  margin-top: -40px;
 }
 
 .utility-chart p {
   margin-top: 20px;
   color: white;
   text-shadow: 1.5px 2px black;
-  }
+}
 
 .chart-border {
   display: flex;
@@ -616,7 +624,7 @@ text-shadow: 1.5px 2px black;
   height: 160px;
   border: black;
   border-width: 5px;
-  z-index: -.5;
+  z-index: -0.5;
   margin: -5px;
   padding: 1;
   border-style: solid;

@@ -1,4 +1,3 @@
-import About from "./About"
 import React from 'react';
 import SubHeader from '../components/SubHeaderComponent';
 import Featured from '../components/FeaturedComponent';
@@ -18,7 +17,7 @@ function Home(props) {
                 <SubHeader darkMode={props.darkMode}/>
             </ParallaxLayer>
             <ParallaxLayer
-            offset={.6}
+            offset={.58}
             speed={1}
             >
                 <Featured className={props.darkMode ? "main--dark" : ""} darkMode={props.darkMode} cnft={CNFT}/>
