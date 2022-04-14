@@ -9,13 +9,13 @@ import Footer from "../components/FooterComponent";
 function Home(props) {
   return (
     <>
-      <Parallax pages={4}>
-          {/* I need to find a way to get this to work with Position relative, and adjust the page length dynamically */}
-        <div style={{ position: "sticky", height: "379vh" }}>
+      <Parallax pages={3.3}>
+        {/* I need to find a way to get this to work with Position relative, and adjust the page length dynamically Use Pixels, not VH <- why*/}
+        
           <ParallaxLayer
             enabled={false}
             sticky={{ start: 0, end: 0.3 }}
-            style={{ zIndex: "-10" }}
+            style={{ zIndex: "-1" }}
           >
             <SubHeader darkMode={props.darkMode} />
           </ParallaxLayer>
@@ -26,12 +26,13 @@ function Home(props) {
               cnft={CNFT}
             />
             <Content
+                handleIncrementNumber={props.handleIncrementNumber}
+                renderNumber={props.renderNumber}
               className={props.darkMode ? "main--dark" : ""}
               darkMode={props.darkMode}
               cnft={CNFT}
             />
           </ParallaxLayer>
-        </div>
         <Footer />
       </Parallax>
     </>

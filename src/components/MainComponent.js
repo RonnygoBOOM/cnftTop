@@ -9,6 +9,11 @@ import Contact from '../Pages/Contact';
 function Main() {
 
     const [darkMode, setDarkMode] = React.useState(false)
+    const [renderNumber, setRenderNumber] = React.useState(1)
+
+    function incrementNumber() {
+        setRenderNumber(prev => prev+2)
+    }
 
     function toggleDarkMode() {
         setDarkMode(prev => !prev)
@@ -24,7 +29,7 @@ function Main() {
         <Header darkMode={darkMode} handleClickDarkMode={toggleDarkMode} />
         <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home darkMode={darkMode}/>} />
+                    <Route path="/" element={<Home handleIncrementNumber={incrementNumber} renderNumber={renderNumber} darkMode={darkMode}/>} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>

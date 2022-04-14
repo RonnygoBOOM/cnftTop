@@ -5,34 +5,34 @@ function Featured(props) {
 
     const blueChip = props.cnft.filter(project => project.featured === "blue chip").map(filteredProject => {
         return (
-        <>
+        <React.Fragment key={filteredProject.id}>
             <div className="featured-project">
                 <img alt={filteredProject.alt} className="featured-project-image" src={filteredProject.image}></img> 
             </div>
-        </>
+        </React.Fragment>
         );
     })
 
     const midRange = props.cnft.filter(project => project.featured === "mid range").map(filteredProject => {
         return (
-        <>
+        <React.Fragment key={filteredProject.id}>
             <div className="featured-project">
                 <img alt={filteredProject.alt} className="featured-project-image" src={filteredProject.image}></img> 
             </div>
             {/* <div className="featured-info">
                 <h1>{filteredProject.name}</h1>
             </div> */}
-        </>
+        </React.Fragment>
         );
     })
 
     const upcoming = props.cnft.filter(project => project.featured === "upcoming").map(filteredProject => {
         return (
-        <>
+        <React.Fragment key={filteredProject.id}>
             <div className="featured-project">
                 <img alt={filteredProject.alt} className="featured-project-image" src={filteredProject.image}></img> 
             </div>
-        </>
+        </React.Fragment>
         );
     })
 

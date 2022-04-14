@@ -1,12 +1,12 @@
 import React from 'react';
-import { Row, Col, Container, UncontrolledTooltip } from 'reactstrap';
+import { Row, Col, UncontrolledTooltip } from 'reactstrap';
 
 function Content(props) {
 
     const myCard = props.cnft.map(item => {
         return (
-            <>
-                <Row key={item.id} className="row--dark">
+            <React.Fragment key={item.id}>
+                <Row className="row--dark">
                 <h3 className="cnft-name">{item.name}</h3> 
                     <div className={props.darkMode ? "card-hover-dark card-hover" : "card-hover"}>
                         <div className={props.darkMode ? "cnft-card cnft-card-dark" : "cnft-card"}>
@@ -22,7 +22,7 @@ function Content(props) {
                     </div>
                     <p className={props.darkMode ? "floor floor--dark" : "floor"}>Floor Price: {item.floorPrice}₳</p>
                 </Row>
-            </>
+            </React.Fragment>
         );
     })
 
@@ -31,19 +31,13 @@ function twoColumns() {
     return(
     <>
         <Col sm="12" /*lg="6"*/>
-            {myCard.slice(0, renderNumber)}
+            {myCard.slice(0, props.renderNumber)}
         </Col>
         <Col sm="12" /*lg="6"*/>
-            {myCard.slice(renderNumber, (renderNumber+1))}
+            {myCard.slice(props.renderNumber, (props.renderNumber+1))}
         </Col>
     </>
     )
-}
-const [renderNumber, setRenderNumber] = React.useState(1)
-
-function incrementNumber() {
-    setRenderNumber(prev => prev+2)
-  console.log(renderNumber)
 }
 
     return (
@@ -51,11 +45,11 @@ function incrementNumber() {
             {twoColumns()}
             <div className={props.darkMode ? "background--dark" : "background--light"}>
                 <div className="load-more-button">
-                    <button id="uncontrolled-tooltip-load-more" className="load-more" onClick={incrementNumber}>
+                    <button id="uncontrolled-tooltip-load-more" className="load-more" onClick={props.handleIncrementNumber}>
                         <span className="fa fa-chevron-down"></span>
                     </button>
                     <UncontrolledTooltip placement="top" target="uncontrolled-tooltip-load-more">
-                        Load More
+                        {props.renderNumber >= myCard.length ? "More Coming Soon" : "Load More"}
                     </UncontrolledTooltip>
                 </div>
             </div>
