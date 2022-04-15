@@ -1,26 +1,28 @@
-1. Make the Cards Responsive 
-    b. make 2-3 rows of cards when in large+ viewports
+1. Make the Cards Responsive
+   b. make 2-3 rows of cards when in large+ viewports
 2. setup a Node.js Express server to store data.
 3. implement user voting for multiple categories
 4. voting data should help inform automatic graphs to show things like popularity, celebrity backing, meeting roadmap milestone goals, discord activity, utility, price action/history
-5. find an API that will help bring in other useful data. 
-6. Implement Search Bar and render only matching searches 
+5. find an API that will help bring in other useful data.
+6. Implement Search Bar and render only matching searches
 7. Hover effect for Featured (and study CSS animations)
-8. Add unique keys for mapped items.
-9. Sticky Footer
-10. add a condition to the "load more" button so that it displays "More coming soon" if the array.length has been reached or another way of saying thats the last element.
-11. lookup helpful extensions like auto rename tag, and auto close tag, Better Comments. Search for extensions under "React/Redux/React-Native"
-12. lookup some of the updates that have changed since ES6 for ES7
-13. Lookup Linter for React/Redux/React-Native
-14. Maximillian Schwarzmuller
+8. lookup helpful extensions like auto rename tag, and auto close tag, Better Comments. Search for extensions under "React/Redux/React-Native"
+9. lookup some of the updates that have changed since ES6 for ES7
+10. Lookup Linter for React/Redux/React-Native
+11. Maximillian Schwarzmuller
+
 COMPLETED:
 
-1. Make the Cards Responsive 
-    a. make cards work when in xs viewports
-        I. media querries?
-        II. tutorial on youtube for this animated card
+1. Make the Cards Responsive
+   a. make cards work when in xs viewports
+   I. media querries?
+   II. tutorial on youtube for this animated card
 
 2. This Week's Featured: a. Blue Chip b. Growing Mid-tier c. upcoming project
-3.Don't Trust, Verify.
-4. Implement React Router DOM
-5. Parallax "Don't Trust, Verify." so it disappears upward behind the nav
+   3.Don't Trust, Verify.
+3. Implement React Router DOM
+4. Parallax "Don't Trust, Verify." so it disappears upward behind the nav
+5. add a condition to the "load more" button so that it displays "More coming soon" if the array.length has been reached or another way of saying thats the last element.
+6. Sticky Footer
+7. Add unique keys for mapped items.
+8. added prettier extension and set it to format on save
