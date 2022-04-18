@@ -302,6 +302,7 @@ width: 5em;
 
 .card-hover-dark {
   background: #2b283a;
+  margin: -.1em;
 }
 
 .cnft-card {
@@ -404,6 +405,7 @@ width: 5em;
 
   .card-hover-dark {
     background: #2b283a;
+    margin: -.1em;
   }
 
   .cnft-card .cnft-card-content {
