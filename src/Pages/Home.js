@@ -9,7 +9,7 @@ import Footer from "../components/FooterComponent";
 function Home(props) {
   return (
     <>
-      <Parallax pages={3.3}>
+      <Parallax pages={3.3}/*subheader vh compensates for background color based on page size*/>
         {/* I need to find a way to get this to work with Position relative, and adjust the page length dynamically Use Pixels, not VH <- why*/}
 
         <ParallaxLayer

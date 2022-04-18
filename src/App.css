@@ -125,7 +125,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   font-size: 4em;
-  padding: 4em 0 4em 0;
+  padding: 23vh 0 40vh 0;
   text-align: center;
   margin: 0;
 }
@@ -134,7 +134,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   font-size: 4em;
-  padding: 4em 0 4em 0;
+  padding: 23vh 0 40vh 0;
   text-align: center;
   background-color: #2b283a;
   color: white;
@@ -155,14 +155,18 @@ text-align: center;
 .featured {
   display: flex;
   margin-bottom: 1em;
+  padding-bottom: 1em;
   box-shadow: 5px 0px 5px 5px rgb(0, 0, 0, 0.3);
+  z-index: 11;
 }
 
 .featured--dark {
   background: #2b283a;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
   display: flex;
   box-shadow: 5px 0px 5px 5px rgb(0, 0, 0, 0.3);
+  z-index: 2;
 }
 
 .featured-text {
@@ -271,10 +275,14 @@ width: 5em;
 }
 
 .floor {
-  position: absolute;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: top;
   font-weight: bold;
-  text-align: center;
-  margin-top: 24em !important;
+  text-align: top;
+  margin-top: -3em !important;
+  z-index: 1;
 }
 
 .floor--dark {
@@ -282,15 +290,19 @@ width: 5em;
 }
 
 .cnft-name {
-  position: absolute;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-top: 1em !important;
+  margin: 0em 0 -2.8em 0;
+  padding: 1em;
   color: rgb(0, 208, 245);
   box-shadow: 10px;
+  background: transparent !important;
 }
 
 .card-hover {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
   display: flex;
@@ -298,11 +310,12 @@ width: 5em;
   align-items: center;
   min-height: 28em;
   background: white;
+  margin: -1em 0 -1em 0 !important;
 }
 
 .card-hover-dark {
   background: #2b283a;
-  margin: -.1em;
+  margin: -1em 0 -1em 0 !important;
 }
 
 .cnft-card {
@@ -319,6 +332,7 @@ width: 5em;
 
 .cnft-card-dark {
   background-color: #2b283a;
+  margin: -1em 0 -1em 0;
 }
 
 .cnft-card .circle {
