@@ -43,11 +43,11 @@ function Footer() {
           </div>
           <div className="footer-disclaimer">
             <p>
-              TopCNFT is focused on providing both educational content and transparency. It is important to continue deeper research before
+              TopCNFT is focused on providing honest educational content based on evidence. It is important to continue deeper research before
               investing, as we are not an authority on value; we offer only our opinions. Since this is a new industry and space, scams are
               rampant, creative, and ever-evolving. It is important to be vigilant and take measures to educate and protect yourself.
             </p>
-            <p>add copyright here</p>
+            <p>Copyright 2022</p>
           </div>
         </Stack>
       </div>
