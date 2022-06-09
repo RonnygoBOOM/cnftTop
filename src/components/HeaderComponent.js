@@ -5,7 +5,7 @@ function Header(props) {
     return (
         <>
         <Nav className={props.darkMode ? "dark" : ""}>
-            <img className="logo" src="/images/cardano-ada-logo.png"></img>
+            <img className="logo" alt="ada logo" src="/images/cardano-ada-logo.png"></img>
             <h1>cnftTOP</h1>
             <div 
                 className="toggler" 
