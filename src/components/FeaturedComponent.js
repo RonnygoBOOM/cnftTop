@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Container } from 'reactstrap';
 
 function Featured(props) {
 
