@@ -5,11 +5,18 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../Pages/Home';
 import About from '../Pages/About';
 import Contact from '../Pages/Contact';
+import Cnft from '../Pages/Cnft';
 
 function Main() {
 
     const [darkMode, setDarkMode] = React.useState(false)
     const [renderNumber, setRenderNumber] = React.useState(1)
+    //I need to lift state up from Home to Main for CNFT data so I can call a CNFT by its id. 
+    // const [currentCnft, setCurrentCnft] = React.useState(null)
+
+    // function handleSetCurrent() {
+    //     setCurrentCnft(prev => Cnft.id)
+    // }
 
     function incrementNumber() {
         setRenderNumber(prev => prev+2)
@@ -32,6 +39,7 @@ function Main() {
                     <Route path="/" element={<Home handleIncrementNumber={incrementNumber} renderNumber={renderNumber} darkMode={darkMode}/>} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/cnft" element={<Cnft />} />
                 </Routes>
         </BrowserRouter>
             {/* <div className={darkMode ? "background--dark" : "background--light"}>
