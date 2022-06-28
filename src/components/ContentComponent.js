@@ -6,7 +6,7 @@ function Content(props) {
     const myCard = props.cnft.map(item => {
         return (
             <React.Fragment key={item.id}>
-                <Row className="row--dark">
+                <Row className="row--dark" onClick={() => {props.handleSetCurrentCnft(item.id)}}>
                 <h3 className="cnft-name">{item.name}</h3> 
                     <div className={props.darkMode ? "card-hover-dark card-hover" : "card-hover"}>
                         <div className={props.darkMode ? "cnft-card cnft-card-dark" : "cnft-card"}>

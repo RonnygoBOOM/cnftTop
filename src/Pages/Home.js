@@ -13,7 +13,7 @@ function Home(props) {
         {/* I need to find a way to get this to work with Position relative, and adjust the page length dynamically Use Pixels, not VH <- why*/}
 
         <ParallaxLayer
-          enabled={false}
+          enabled={"false"}
           sticky={{ start: 0, end: 0.3 }}
           style={{ zIndex: "-1" }}
         >
@@ -31,6 +31,7 @@ function Home(props) {
             className={props.darkMode ? "main--dark" : ""}
             darkMode={props.darkMode}
             cnft={CNFT}
+            handleSetCurrentCnft={props.handleSetCurrentCnft}
           />
         </ParallaxLayer>
         <Footer />

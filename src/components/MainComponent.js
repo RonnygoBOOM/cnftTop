@@ -12,11 +12,14 @@ function Main() {
     const [darkMode, setDarkMode] = React.useState(false)
     const [renderNumber, setRenderNumber] = React.useState(1)
     //I need to lift state up from Home to Main for CNFT data so I can call a CNFT by its id. 
-    // const [currentCnft, setCurrentCnft] = React.useState(null)
+    const [currentCnft, setCurrentCnft] = React.useState(null)
 
-    // function handleSetCurrent() {
-    //     setCurrentCnft(prev => Cnft.id)
-    // }
+    function handleSetCurrentCnft(selection) {
+        setCurrentCnft(prev => selection)
+        console.log(selection);
+        // I would like to run the js code on the next line to navigate to /cnft path but it wont update the currentCnft AND navigate there. SetTimeout caused an infinite loop. Async await??
+        // window.location.href='/cnft';
+    }
 
     function incrementNumber() {
         setRenderNumber(prev => prev+2)
@@ -25,6 +28,7 @@ function Main() {
     function toggleDarkMode() {
         setDarkMode(prev => !prev)
     }
+
 
     useEffect(() => {
       document.body.classList.toggle('darkMode-on', darkMode);
@@ -36,10 +40,10 @@ function Main() {
         <Header darkMode={darkMode} handleClickDarkMode={toggleDarkMode} />
         <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home handleIncrementNumber={incrementNumber} renderNumber={renderNumber} darkMode={darkMode}/>} />
+                    <Route path="/" element={<Home handleIncrementNumber={incrementNumber} renderNumber={renderNumber} darkMode={darkMode} handleSetCurrentCnft={handleSetCurrentCnft}/>} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
-                    <Route path="/cnft" element={<Cnft />} />
+                    <Route path="/cnft" element={<Cnft currentCnft={currentCnft}/>} />
                 </Routes>
         </BrowserRouter>
             {/* <div className={darkMode ? "background--dark" : "background--light"}>
