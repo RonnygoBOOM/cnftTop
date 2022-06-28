@@ -12,7 +12,7 @@ function Main() {
     const [darkMode, setDarkMode] = React.useState(false)
     const [renderNumber, setRenderNumber] = React.useState(1)
     //I need to lift state up from Home to Main for CNFT data so I can call a CNFT by its id. 
-    const [currentCnft, setCurrentCnft] = React.useState(null)
+    const [currentCnft, setCurrentCnft] = React.useState(0)
 
     function handleSetCurrentCnft(selection) {
         setCurrentCnft(prev => selection)
@@ -43,7 +43,8 @@ function Main() {
                     <Route path="/" element={<Home handleIncrementNumber={incrementNumber} renderNumber={renderNumber} darkMode={darkMode} handleSetCurrentCnft={handleSetCurrentCnft}/>} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
-                    <Route path="/cnft" element={<Cnft currentCnft={currentCnft}/>} />
+                    {/* Why isnt my /cnft path rendering?! */}
+                    <Route path="/cnft" element={<Cnft currentCnft={currentCnft} />} />
                 </Routes>
         </BrowserRouter>
             {/* <div className={darkMode ? "background--dark" : "background--light"}>
