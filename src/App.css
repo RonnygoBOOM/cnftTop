@@ -644,3 +644,8 @@ width: 5em;
   border-bottom-right-radius: 2em;
   background: transparent;
 }
+
+/* /cnft */
+.chosen-cnft-image {
+width: 20vw;
+}
