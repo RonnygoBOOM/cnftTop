@@ -646,6 +646,10 @@ width: 5em;
 }
 
 /* /cnft */
+.chosen-cnft-page {
+  display: flex;
+  justify-content: center;
+}
 .chosen-cnft-image {
 width: 20vw;
 }
