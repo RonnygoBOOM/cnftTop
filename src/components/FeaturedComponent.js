@@ -7,7 +7,7 @@ function Featured(props) {
         return (
         <React.Fragment key={filteredProject.id}>
             <div className="featured-project">
-                <img alt={filteredProject.alt} className="featured-project-image" src={filteredProject.image}></img> 
+                <img alt={filteredProject.alt} className="featured-project-image" src={filteredProject.image2 ? filteredProject.image2 : filteredProject.image}></img> 
             </div>
         </React.Fragment>
         );
@@ -17,7 +17,7 @@ function Featured(props) {
         return (
         <React.Fragment key={filteredProject.id}>
             <div className="featured-project">
-                <img alt={filteredProject.alt} className="featured-project-image" src={filteredProject.image}></img> 
+                <img alt={filteredProject.alt} className="featured-project-image" src={filteredProject.image2 ? filteredProject.image2 : filteredProject.image}></img> 
             </div>
             {/* <div className="featured-info">
                 <h1>{filteredProject.name}</h1>
@@ -30,7 +30,7 @@ function Featured(props) {
         return (
         <React.Fragment key={filteredProject.id}>
             <div className="featured-project">
-                <img alt={filteredProject.alt} className="featured-project-image" src={filteredProject.image}></img> 
+                <img alt={filteredProject.alt} className="featured-project-image" src={filteredProject.image2 ? filteredProject.image2 : filteredProject.image}></img> 
             </div>
         </React.Fragment>
         );

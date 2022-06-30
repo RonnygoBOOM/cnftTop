@@ -1,6 +1,19 @@
 export const CNFTDATA = [
     {
         id: 0,
+        name: "The Deadly Sins",
+        title: "Meet the Crocs",
+        image: "images/Croc1.png",
+        alt: "Cardano Crocs Club Image",
+        image2: "images/CardanoCrocsClub.png",
+        description: "'Community Driven' is probably the best way to describe this project. With a traditional marketing strategy, and a strong focus on meeting roadmap goals on-time, building a strong organic community, and offering value and utility to its holders, this project has a solid foundation in an environment where most struggle to stand.",
+        popularity: 70,
+        floorPrice: 60,
+        rating: 5,
+        featured: "upcoming",
+    },
+    {
+        id: 1,
         name: "Cardano Crocs Club",
         title: "Meet the Crocs",
         image: "images/Croc1.png",
@@ -13,7 +26,7 @@ export const CNFTDATA = [
         featured: "",
     },
     {
-        id: 1,
+        id: 2,
         name: "CryptoDino",
         title: "Meet the Dinos",
         image: "images/CryptoDino.webp",
@@ -24,7 +37,7 @@ export const CNFTDATA = [
         featured: "",
     },
     {
-        id: 2,
+        id: 3,
         name: "Grandmaster Adventurers",
         title: "Meet the Heroes",
         image: "images/GrandmasterAdventurer.gif",
@@ -32,10 +45,10 @@ export const CNFTDATA = [
         description: "Fantasy World Adventurers for a MMORPG Inn-management and questing game",
         floorPrice: 64,
         rating: 5,
-        featured: "mid range",
+        featured: "",
     },
     {
-        id: 3,
+        id: 4,
         name: "Pavia",
         title: "Discover the Metaverse",
         image: "images/Pavia.webp",
@@ -43,10 +56,10 @@ export const CNFTDATA = [
         description: "The first metaverse land grab in the Cardano Ecosystem",
         floorPrice: 345,
         rating: 5,
-        featured: "",
+        featured: "mid range",
     },
     {
-        id: 4,
+        id: 5,
         name: "World of Cardano",
         title: "Mystical Metaverse",
         image: "images/worldOfCardanoForrest.png",
@@ -57,7 +70,7 @@ export const CNFTDATA = [
         featured: "",
     },
     {
-        id: 5,
+        id: 6,
         name: "Radioactive Crocs Club",
         title: "The Swamp Grows",
         image: "images/radioactiveCroc.png",
@@ -65,10 +78,10 @@ export const CNFTDATA = [
         description: "Cardano Crocs Club's second mint is fully metaverse-ready, and offers staking rewards that payout in C4 token",
         floorPrice: 71,
         rating: 5,
-        featured: "upcoming",
+        featured: "",
     },
     {
-        id: 6,
+        id: 7,
         name: "Clay Mates",
         title: "Clay Nation",
         image: "images/clayNation.png",
@@ -79,7 +92,7 @@ export const CNFTDATA = [
         featured: "blue chip",
     },
     {
-        id: 7,
+        id: 8,
         name: "Boss Cat Rocket Club",
         title: "Meet the Boss",
         image: "images/bossCat.png",
@@ -90,7 +103,7 @@ export const CNFTDATA = [
         featured: "",
     },
     {
-        id: 8,
+        id: 9,
         name: "Spacebudz",
         title: "Budz are out there",
         image: "images/spaceBudz.png",
