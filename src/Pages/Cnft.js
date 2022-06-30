@@ -57,7 +57,7 @@ function Cnft(props) {
         Cnft
       </h1>
       {chosenCnft}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
