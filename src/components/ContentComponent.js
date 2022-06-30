@@ -13,7 +13,7 @@ function Content(props) {
                             <div className="circle">
                                 <div className={props.darkMode ? "cnft-card-content cnft-card-content-dark" : "cnft-card-content"}>
                                     <h2>{item.title}</h2>
-                                    <p>{item.description}</p>
+                                    <p>{(item.description.length <= 170) ? item.description : (item.description.slice(0, 170) + "...")}</p>
                                     <p>Rating: {item.rating}</p>
                                 </div>
                                 <img alt={item.alt} className="cnft-image" src={item.image}></img>   
