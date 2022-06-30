@@ -44,7 +44,7 @@ function Main() {
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                     {/* Why isnt my /cnft path rendering?! */}
-                    <Route path="/cnft" element={<Cnft currentCnft={currentCnft} />} />
+                    <Route path="/cnft" element={<Cnft darkMode={darkMode} currentCnft={currentCnft} />} />
                 </Routes>
         </BrowserRouter>
             {/* <div className={darkMode ? "background--dark" : "background--light"}>
