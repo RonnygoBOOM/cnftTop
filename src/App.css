@@ -140,6 +140,7 @@ text-align: center;
   margin: 0;
 }
 
+
 /* Featured styles */
 .featured--dark-outer {
   background: #2b283a;
@@ -478,6 +479,15 @@ width: 5em;
     transform: scale(50%);
     height: 300px;
     transition: 0.75s;
+  }
+  .sub-header {
+    padding-top: 27vh;
+    font-size: 10vw;
+  }
+  
+  .sub-header-dark {
+    padding-top: 27vh;
+    font-size: 10vw;
   }
 }
 
